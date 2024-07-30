@@ -1,0 +1,215 @@
+@media (max-width: 1136px) {
+	.loader__svg {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media (max-width: 992px) {
+	.date-wrap {
+		flex-wrap: wrap;
+	}
+
+	.actions {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.header {
+		padding: 8px 0;
+	}
+
+	.page__header {
+		margin-bottom: 30px;
+	}
+
+	.search-input {
+		display: none;
+	}
+
+	.header__container {
+		justify-content: center;
+	}
+
+	.logo {
+		height: 25px;
+		width: 25px;
+	}
+
+	.clients__title {
+		font-size: 18px;
+	}
+
+	.legend-wrapper {
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.loader__wrap {
+		max-width: calc(100vw - 20px);
+	}
+
+	.loader__span {
+		font-size: 18px;
+	}
+
+	.modal {
+		padding: 10px;
+	}
+}
+
+@media (hover: hover) {
+	.add-client-btn:hover {
+		color: #fff;
+		background-color: #b89eff;
+	}
+
+	.add-client-btn:hover .add-client-icon path {
+		fill: #fff;
+	}
+
+	.add-client-btn:active {
+		color: #fff;
+		background-color: var(--firm-dark);
+	}
+
+	.modal__btn:hover {
+		background-color: #b89eff;
+	}
+
+	.modal__btn:active {
+		background-color: var(--firm-dark);
+	}
+
+	.change-btn:hover > .cell__span {
+		color: var(--firm);
+	}
+
+	.delete-btn:hover > .cell__span {
+		color: var(--red);
+	}
+
+	.contact__delete-btn:hover {
+		border-color: var(--red);
+	}
+
+	.contact__delete-btn:hover .delete-contact-icon path {
+		fill: var(--red);
+	}
+
+	.form__add-btn:hover {
+		color: var(--firm);
+	}
+
+	.form__add-btn:hover .plus-icon circle {
+		fill: var(--firm);
+	}
+
+	.form__add-btn:hover .plus-icon g {
+		fill: #fff;
+	}
+
+	.modal__close-btn:hover .close-icon path {
+		fill: var(--red);
+	}
+
+	.icons__link:hover .contact-icon g,
+	.icons__link:hover .contact-icon path,
+	.icons__link:hover .contact-icon circle {
+		opacity: 1;
+	}
+
+	.th__btn:hover .th__span {
+		color: var(--black);
+	}
+
+	.th__btn:hover .th__span_active {
+		color: var(--firm);
+	}
+
+	.th__btn:hover .arrow-icon g {
+		opacity: 1;
+	}
+
+	.th__btn:hover .letters-icon path {
+		fill: var(--firm);
+	}
+
+	.choices__list--dropdown:hover .choices__item--selectable.is-highlighted {
+		background-color: #e7e5eb;
+	}
+}
+
+@media (hover: none) {
+	.add-client-btn:active {
+		color: #fff;
+		background-color: var(--firm-dark);
+	}
+
+	.add-client-btn:active .add-client-icon path {
+		fill: #fff;
+	}
+
+	.modal__btn:active {
+		background-color: var(--firm-dark);
+	}
+
+	.change-btn:active > .cell__span {
+		color: var(--firm);
+	}
+
+	.delete-btn:active > .cell__span {
+		color: var(--red);
+	}
+
+	.contact__delete-btn:active {
+		border-color: var(--red);
+	}
+
+	.contact__delete-btn:active > .delete-contact-icon path {
+		fill: var(--red);
+	}
+
+	.form__add-btn:active {
+		color: var(--firm);
+	}
+
+	.form__add-btn:active .plus-icon circle {
+		fill: var(--firm);
+	}
+
+	.form__add-btn:active .plus-icon g {
+		fill: #fff;
+	}
+
+	.icons__link:active .contact-icon g,
+	.icons__link:active .contact-icon path,
+	.icons__link:active .contact-icon circle {
+		opacity: 1;
+	}
+
+	.th__btn .th__span:active {
+		color: var(--black);
+	}
+
+	.th__btn:active .th__span_active {
+		color: var(--firm);
+	}
+
+	.th__btn:active .arrow-icon g {
+		opacity: 1;
+	}
+
+	.th__btn:active .letters-icon path {
+		fill: var(--firm);
+	}
+
+	.choices__list--dropdown:active .choices__item--selectable.is-highlighted {
+		background-color: #e7e5eb;
+	}
+}
