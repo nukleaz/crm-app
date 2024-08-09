@@ -1,13 +1,13 @@
-export function formatDate(date) {
-	return new Date(date).toLocaleDateString('en-GB').replace(/\//g, '.');
+export function formatDate(date, locale = 'en-GB', separator = '.') {
+	return new Date(date).toLocaleDateString(locale).replace(/\//g, separator);
 }
 
-export function formatTime(date) {
-	return new Date(date).toLocaleTimeString('en-GB', {
-		hour: 'numeric',
-		minute: 'numeric',
-		hourCycle: 'h23',
-	});
+export function formatTime(
+	date,
+	locale = 'en-GB',
+	options = { hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }
+) {
+	return new Date(date).toLocaleTimeString(locale, options);
 }
 
 export function editString(string) {

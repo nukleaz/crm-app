@@ -4,7 +4,7 @@
 
 ## Технологии
 * HTML
-* CSS
+* CSS (БЭМ)
 * JavaScript
 
 ![gif1](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGUxZnM2Y2tnbjhocW8wdHhjemp5dWhmZ3M2MW5mOWh6MTk1ZWlsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5H4julJyt8ris7M4yj/giphy.gif)
