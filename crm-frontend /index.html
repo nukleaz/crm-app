@@ -2,24 +2,10 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CRM</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
-		/>
-		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/media.css" />
-		<script type="module" src="./main.js"></script>
 	</head>
-
 	<body class="page">
 		<header class="header page__header">
 			<div class="container header__container">
@@ -50,169 +36,10 @@
 			<section class="clients">
 				<div class="container clients__container">
 					<h1 class="clients__title">Клиенты</h1>
-					<div class="table-wrap">
-						<table class="table section__table">
-							<thead class="table__titles">
-								<tr class="table__row">
-									<th class="table__th th th-id">
-										<button
-											id="id-btn"
-											data-col="id"
-											data-dir="asc"
-											class="btn th__btn"
-										>
-											<span class="th__span"
-												>ID
-												<svg
-													class="arrow-icon"
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<g opacity="0.7">
-														<path
-															d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
-															fill="#9873FF"
-														/>
-													</g>
-												</svg>
-											</span>
-										</button>
-									</th>
-									<th class="table__th th th-fio">
-										<button
-											data-col="fullName"
-											data-dir="desc"
-											class="btn th__btn"
-										>
-											<span class="th__span"
-												>Фамилия Имя Отчество
-												<svg
-													class="arrow-icon arrow-icon_rotate"
-													width="12"
-													height="12"
-													viewBox="0 0 12 12"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<g opacity="0.7">
-														<path
-															d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
-															fill="#9873FF"
-														/>
-													</g>
-												</svg>
-												<svg
-													class="letters-icon"
-													width="16"
-													height="8"
-													viewBox="0 0 16 8"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														d="M5.37109 8L4.6582 6.01758H1.92871L1.23047 8H0L2.6709 0.832031H3.94043L6.61133 8H5.37109ZM4.35059 5.01172L3.68164 3.06836C3.63281 2.93815 3.56445 2.73307 3.47656 2.45312C3.39193 2.17318 3.33333 1.9681 3.30078 1.83789C3.21289 2.23828 3.08431 2.67611 2.91504 3.15137L2.27051 5.01172H4.35059ZM6.96289 5.80762V4.83105H9.47266V5.80762H6.96289ZM13.0322 5.13867L11.2646 8H9.93164L11.9434 4.87012C11.0319 4.55436 10.5762 3.8903 10.5762 2.87793C10.5762 2.22363 10.8024 1.72396 11.2549 1.37891C11.7074 1.03385 12.373 0.861328 13.252 0.861328H15.3955V8H14.2236V5.13867H13.0322ZM14.2236 1.83789H13.2959C12.8044 1.83789 12.4268 1.92578 12.1631 2.10156C11.9027 2.27409 11.7725 2.55729 11.7725 2.95117C11.7725 3.33529 11.8994 3.63477 12.1533 3.84961C12.4072 4.06445 12.8011 4.17188 13.335 4.17188H14.2236V1.83789Z"
-														fill="#b89eff"
-													/>
-												</svg>
-											</span>
-										</button>
-									</th>
-									<th class="table__th th th-create">
-										<button
-											data-col="createdAt"
-											data-dir="desc"
-											class="btn th__btn"
-										>
-											<span class="th__span"
-												>Дата и время
-												<span class="th__span_with-arrow"
-													>создания
-													<svg
-														class="arrow-icon arrow-icon_rotate"
-														width="12"
-														height="12"
-														viewBox="0 0 12 12"
-														fill="none"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<g opacity="0.7">
-															<path
-																d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
-																fill="#9873FF"
-															/>
-														</g>
-													</svg>
-												</span>
-											</span>
-										</button>
-									</th>
-									<th class="table__th th th-update">
-										<button
-											data-col="updatedAt"
-											data-dir="desc"
-											class="btn th__btn"
-										>
-											<span class="th__span"
-												>Последние
-												<span class="th__span_with-arrow">
-													изменения
-													<svg
-														class="arrow-icon arrow-icon_rotate"
-														width="12"
-														height="12"
-														viewBox="0 0 12 12"
-														fill="none"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<g opacity="0.7">
-															<path
-																d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
-																fill="#9873FF"
-															/>
-														</g>
-													</svg>
-												</span>
-											</span>
-										</button>
-									</th>
-									<th class="table__th th th-contacts">
-										<span class="th__span">Контакты</span>
-									</th>
-									<th class="table__th th th-actions">
-										<span class="th__span">Действия</span>
-									</th>
-								</tr>
-							</thead>
-							<tbody class="table__list"></tbody>
-						</table>
-					</div>
-					<button class="btn add-client-btn">
-						<svg
-							class="add-client-icon"
-							width="23"
-							height="16"
-							viewBox="0 0 23 16"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
-								fill="#9873FF"
-							/>
-						</svg>
-						<span>Добавить клиента</span>
-					</button>
+					<div id="root" class="table-wrap"></div>
 				</div>
 			</section>
 		</main>
-		<div class="modal"></div>
-		<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
-		<script src="https://unpkg.com/@popperjs/core@2"></script>
-		<script src="https://unpkg.com/tippy.js@6"></script>
-		<script src="https://unpkg.com/imask"></script>
-		<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+		<script type="module" src="/src/main.tsx"></script>
 	</body>
 </html>
